@@ -23,6 +23,7 @@ internal class BackgroundMonitoring
     public void Start()
     {
         monitoringTask = MonitoringWorkAsync();
+        Console.WriteLine($"{DateTime.Now} - Monitoring started. Press q to stop.");
     }
 
     private async Task MonitoringWorkAsync()

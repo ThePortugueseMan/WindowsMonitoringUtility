@@ -32,10 +32,10 @@ internal class Routines
         try
         {
             process.Kill();
-            logs.WriteLine($"{processBackup.killDate} [{processBackup.processName}]: " +
-                $"KILLED with {processBackup.lifetime.TotalMinutes} minutes");
+            logs.WriteLine($"{processBackup.killDate} [{processBackup.processName}, Id: {processBackup.processId}]: " +
+                $"KILLED with {processBackup.lifetime.TotalMinutes.ToString("F2")} minutes");
         }
-        catch (Exception ex) { }
+        catch (Exception e) { }
         
     }
 }
