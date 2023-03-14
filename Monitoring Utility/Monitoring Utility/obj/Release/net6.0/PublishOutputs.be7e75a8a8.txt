@@ -1,0 +1,6 @@
+C:\Users\emartins\Desktop\Published\MonitoringUtility.exe
+C:\Users\emartins\Desktop\Published\MonitoringUtility.dll
+C:\Users\emartins\Desktop\Published\MonitoringUtility.deps.json
+C:\Users\emartins\Desktop\Published\MonitoringUtility.runtimeconfig.json
+C:\Users\emartins\Desktop\Published\MonitoringUtility.pdb
+C:\Users\emartins\Desktop\Published\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
