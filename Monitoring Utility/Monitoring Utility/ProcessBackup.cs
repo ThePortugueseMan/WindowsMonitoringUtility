@@ -1,5 +1,6 @@
 ﻿namespace Monitoring_Utility;
 
+// Class that stores relevant process data after it's killed
 internal class ProcessBackup
 {
     public DateTime startDate;
@@ -8,7 +9,7 @@ internal class ProcessBackup
     public int processId;
     public TimeSpan lifetime;
 
-    // Class that stores relevant process data after it's killed
+    
     public ProcessBackup(DateTime _startDate, string _processName, DateTime _killDate, int _processId)
     {
         startDate = _startDate;
