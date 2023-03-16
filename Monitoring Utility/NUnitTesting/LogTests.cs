@@ -4,11 +4,11 @@ namespace UtilityNUnitTests;
 
 internal class LogTests
 {
-    [Test]
-    public void Writes_Message_To_Log_Last_Line()
+    [TestCase("LogWriting Test")]
+    [TestCase("Another Test")]
+    public void Writes_Message_To_Logs_Last_Line(string message)
     {
         // ARRANGE
-        string message = "Log Writing Test";
         Logs logs = new();
 
         // ACT

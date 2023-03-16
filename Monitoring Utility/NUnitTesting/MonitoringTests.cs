@@ -7,11 +7,11 @@ namespace UtilityNUnitTests;
 
 internal class MonitoringTests
 {
-    [Test]
-    public void Zero_LifeTime_Terminates_Process_When_Called()
+    [TestCase("notepad")]
+    [TestCase("calc")]
+    public void Zero_LifeTime_Terminates_Process_When_Called(string processName)
     {
-        // ARRANGE
-        string processName = "notepad";       
+        // ARRANGE      
         Process process = Process.Start(processName);
 
         // ACT
@@ -21,18 +21,17 @@ internal class MonitoringTests
         bckgMonitor.StopAsync();
 
         // ASSERT        
-        Assert.IsTrue(process.HasExited);
+        Assert.That(
+            () => process.HasExited, Is.EqualTo(true).After(2).Seconds.PollEvery(1).Seconds);
     }
 
-    [TestCase(1)]
-    public void Terminates_Process_With_X_LifeTime_In_Minutes(int lifeTime)
+    [TestCase("notepad", 1)]
+    [TestCase("notepad", 2)]
+    public void Terminates_Process_With_X_LifeTime_In_Minutes(string processName, int lifeTime)
     {
         // ARRANGE
-        string processName = "notepad";
         int monitoringFrequency = 0;
         Process process = Process.Start(processName);
-        Thread.Sleep(1000);
-
 
         // ACT
         BackgroundMonitoring bckgMonitor =

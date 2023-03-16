@@ -13,3 +13,17 @@ Log Writing Test
 Log Writing Test
 16/03/2023 15:09:00 [notepad, Id: 20160]: KILLED with 1:0 (mm:ss)
 16/03/2023 15:09:00 [notepad, Id: 6548]: KILLED with 0:0 (mm:ss)
+Log Writing Test
+16/03/2023 15:16:47 [notepad, Id: 1816]: KILLED with 0:0 (mm:ss)
+16/03/2023 15:18:59 [notepad, Id: 21180]: KILLED with 0:0 (mm:ss)
+16/03/2023 15:19:21 [notepad, Id: 20828]: KILLED with 0:0 (mm:ss)
+16/03/2023 15:19:49 [notepad, Id: 12484]: KILLED with 0:0 (mm:ss)
+16/03/2023 15:23:37 [notepad, Id: 9880]: KILLED with 0:0 (mm:ss)
+16/03/2023 15:23:38 [calc, Id: 12072]: KILLED with 0:0 (mm:ss)
+16/03/2023 15:27:27 [notepad, Id: 4944]: KILLED with 0:0 (mm:ss)
+16/03/2023 15:27:28 [calc, Id: 21960]: KILLED with 0:0 (mm:ss)
+16/03/2023 15:30:23 [notepad, Id: 7312]: KILLED with 1:0 (mm:ss)
+16/03/2023 15:31:24 [notepad, Id: 21660]: KILLED with 1:0 (mm:ss)
+LogWriting Test
+Another Test
+16/03/2023 15:39:54 [calc, Id: 15496]: KILLED with 0:0 (mm:ss)

@@ -1,6 +1,4 @@
 ﻿using Monitoring_Utility;
-using System.Diagnostics;
-using System.Threading;
 
 internal class Program
 {
@@ -24,8 +22,9 @@ internal class Program
         }
         while (input.Key != ConsoleKey.Q);
 
-        Console.Clear();
+        // await is already inside the method
         monitoringTask.StopAsync();
+        Console.Clear();
     }
 
 

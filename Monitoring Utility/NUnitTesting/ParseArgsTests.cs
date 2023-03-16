@@ -3,10 +3,11 @@ using Monitoring_Utility;
 
 namespace UtilityNUnitTests;
 
-public class ArgsTests
+public class ParseArgsTests
 {
-    [Test]
-    public void Less_Than_3Args_Throws()
+    [TestCase(false, new string[] { "1"})]
+    [TestCase(false, new string[] { "1", "2" })]
+    public void Less_Than_3Args_Throws(bool someBool, string[] args)
     {
         // ARRANGE
         string[] inputArgs = { "process", "2" };
@@ -36,20 +37,20 @@ public class ArgsTests
         Assert.Throws<NullReferenceException>(() => Program.Main(inputArgs));
     }
 
-    [Test]
-    public void Process_Name_With_Spaces_Parses()
+    [TestCase("Opera Web Browser", new string[] { "Opera", "Web", "Browser", "1", "1" })]
+    [TestCase("Microsoft Visual Studio", new string[] { "Microsoft", "Visual", "Studio", "1", "1" })]
+    public void Process_Name_With_Spaces_Parses(string expected, string[] args)
     {
-        // ARRANGE
-        string[] inputArgs = { "Microsoft", "Visual", "Studio", "1", "1" };
-
         // ACT
-        ParseArgs parseArgs = new(inputArgs);
+        ParseArgs parseArgs = new(args);
 
         // ASSERT
-        Assert.That(parseArgs.processName, Is.EqualTo("Microsoft Visual Studio"));
+        Assert.That(parseArgs.processName, Is.EqualTo(expected));
     }
 
-    [TestCase(false, new string[] {"notepad","1","1"})]
+    [TestCase(false, new string[] { "process", "string", "1", "1" })]
+    [TestCase(false, new string[] { "process", "10", "100" })]
+    [TestCase(false, new string[] {"process","1","1"})]
     public void Parses_Last_2Ints(bool someBool, string[] args)
     {
         // ARRANGE

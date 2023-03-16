@@ -36,7 +36,7 @@ internal class Routines
             logs.WriteLine($"{processBackup.killDate} [{processBackup.processName}, Id: {processBackup.processId}]: " +
                 $"KILLED with {Math.Truncate(processBackup.lifetime.TotalMinutes)}:{processBackup.lifetime.Seconds} (mm:ss)");
         }
-        catch (Exception e) { }
+        catch (Exception) { throw new Exception("Couldn't complete KillProcessRoutine"); }
         
     }
 }
