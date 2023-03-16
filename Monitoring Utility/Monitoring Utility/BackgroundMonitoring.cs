@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Monitoring_Utility;
 
-internal class BackgroundMonitoring
+public class BackgroundMonitoring
 {
     private Task? monitoringTask;
     private readonly PeriodicTimer timer;
@@ -14,9 +14,17 @@ internal class BackgroundMonitoring
     private Routines ops;
 
 
-    public BackgroundMonitoring(int frequencyInMinutes, string processName, int maxLifeTime)
+    public BackgroundMonitoring(string processName, int maxLifeTime, int frequencyInMinutes)
     {
-        timer = new PeriodicTimer(TimeSpan.FromMinutes(frequencyInMinutes));
+        try 
+        {
+            timer = new PeriodicTimer(TimeSpan.FromMinutes(frequencyInMinutes));
+        }
+        catch(ArgumentOutOfRangeException)
+        {
+            timer = new PeriodicTimer(TimeSpan.FromMilliseconds(100));
+        }
+        
         ops = new Routines(maxLifeTime, processName);
     }
 

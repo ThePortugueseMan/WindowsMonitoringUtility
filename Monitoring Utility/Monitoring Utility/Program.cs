@@ -6,26 +6,11 @@ internal class Program
 {
     private static void Main(string[] args)
     {
-        string processName;
-        int monitoringFrequency, maxLifeTime;
-        ParseArgs parseArgs = new();
+        ParseArgs parseArgs = new(args);        
 
-        parseArgs.ValidateArgs(args);
-        processName = parseArgs.GetProcessNameFromArgs(args);
-        if (false)
-        {
-            processName = args[0];
+        var monitoringTask = 
+            new BackgroundMonitoring(parseArgs.processName, parseArgs.maxLifeTime, parseArgs.monitoringFrequency);
 
-        }
-        else
-        {
-            processName = "notepad";
-            monitoringFrequency = 1;
-            maxLifeTime = 1;
-        }
-        
-
-        var monitoringTask = new BackgroundMonitoring(monitoringFrequency, processName, maxLifeTime);
         monitoringTask.Start();
 
         ConsoleKeyInfo input;

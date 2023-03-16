@@ -101,6 +101,5 @@ E:\Code Academy\Challenges\WindowsMonitoringUtility\Monitoring Utility\NUnitTest
 E:\Code Academy\Challenges\WindowsMonitoringUtility\Monitoring Utility\NUnitTesting\bin\Debug\net6.0\MonitoringUtility.deps.json
 E:\Code Academy\Challenges\WindowsMonitoringUtility\Monitoring Utility\NUnitTesting\bin\Debug\net6.0\MonitoringUtility.runtimeconfig.json
 E:\Code Academy\Challenges\WindowsMonitoringUtility\Monitoring Utility\NUnitTesting\bin\Debug\net6.0\MonitoringUtility.exe
-E:\Code Academy\Challenges\WindowsMonitoringUtility\Monitoring Utility\NUnitTesting\bin\Debug\net6.0\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
 E:\Code Academy\Challenges\WindowsMonitoringUtility\Monitoring Utility\NUnitTesting\bin\Debug\net6.0\MonitoringUtility.dll
 E:\Code Academy\Challenges\WindowsMonitoringUtility\Monitoring Utility\NUnitTesting\bin\Debug\net6.0\MonitoringUtility.pdb

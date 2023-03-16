@@ -1,12 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "Vu3s7CO+AKCG25wiKkpOXPrnFYvZhaBt6keVuokZGrPIfQ5V1oz0LG0Wgj2KYvfcTXEoIIzKI9Ic63FaUaEjHg==",
+  "dgSpecHash": "m6Y8Un69q6pDVagnOyGdZidt0XBvF/7oThMM5a4WGBeQc2sEKDa6FGdhwIIkUbtUFe4AUbcHCwgwHwkGmJNqeA==",
   "success": true,
   "projectFilePath": "E:\\Code Academy\\Challenges\\WindowsMonitoringUtility\\Monitoring Utility\\NUnitTesting\\UtilityNUnitTests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\cemar\\.nuget\\packages\\coverlet.collector\\3.1.2\\coverlet.collector.3.1.2.nupkg.sha512",
     "C:\\Users\\cemar\\.nuget\\packages\\microsoft.codecoverage\\17.1.0\\microsoft.codecoverage.17.1.0.nupkg.sha512",
-    "C:\\Users\\cemar\\.nuget\\packages\\microsoft.codedom.providers.dotnetcompilerplatform\\3.6.0\\microsoft.codedom.providers.dotnetcompilerplatform.3.6.0.nupkg.sha512",
     "C:\\Users\\cemar\\.nuget\\packages\\microsoft.csharp\\4.0.1\\microsoft.csharp.4.0.1.nupkg.sha512",
     "C:\\Users\\cemar\\.nuget\\packages\\microsoft.net.test.sdk\\17.1.0\\microsoft.net.test.sdk.17.1.0.nupkg.sha512",
     "C:\\Users\\cemar\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
@@ -53,16 +52,5 @@
     "C:\\Users\\cemar\\.nuget\\packages\\system.xml.readerwriter\\4.0.11\\system.xml.readerwriter.4.0.11.nupkg.sha512",
     "C:\\Users\\cemar\\.nuget\\packages\\system.xml.xdocument\\4.0.11\\system.xml.xdocument.4.0.11.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'Microsoft.CodeDom.Providers.DotNetCompilerPlatform 3.6.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
-      "libraryId": "Microsoft.CodeDom.Providers.DotNetCompilerPlatform",
-      "targetGraphs": [
-        "net6.0"
-      ]
-    }
-  ]
+  "logs": []
 }

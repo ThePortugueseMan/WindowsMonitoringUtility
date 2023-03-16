@@ -1,8 +1,8 @@
 ﻿namespace Monitoring_Utility;
 
-internal class Logs
+public class Logs
 {
-    string logFilePath = $"{Environment.CurrentDirectory}\\logs.log";
+    public string logFilePath = $"{Environment.CurrentDirectory}\\logs.log";
 
     public void WriteLine(string message)
     {
@@ -11,6 +11,4 @@ internal class Logs
             w.WriteLine(message);
         }
     }
-
-
 }

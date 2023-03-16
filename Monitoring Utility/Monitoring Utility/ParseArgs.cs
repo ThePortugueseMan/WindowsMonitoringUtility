@@ -2,17 +2,22 @@
 
 public class ParseArgs
 {
-    public void ValidateArgs(string[] args)
+    public string processName;
+    public int maxLifeTime, monitoringFrequency;
+
+    public ParseArgs(string[] args)
     {
-        if(args.Length < 3)
+        if (args.Length < 3)
         {
             throw new ArgumentException("Not enough arguments");
         }
-        if (!Int32.TryParse(args[args.Length - 1], out _) ||
-            !Int32.TryParse(args[args.Length - 2], out _))
-        {
-            throw new ArgumentException("Last 2 arguments must be int.");
-        }
+
+        processName = GetProcessNameFromArgs(args);
+
+        int[] lastTwoInts = GetLastTwoIntsFromArgs(args);
+        maxLifeTime = lastTwoInts[0];
+        monitoringFrequency = lastTwoInts[1];
+
     }
 
     public string GetProcessNameFromArgs(string[] args)
@@ -27,10 +32,19 @@ public class ParseArgs
     {
         int[] returnIntArray = new int[2];
 
-        if (!Int32.TryParse(args[args.Length - 1], out returnIntArray[0]))
-        { throw new Exception("Couldn't parse an int from the second argument"); }
-        if (!Int32.TryParse(args[args.Length - 2], out returnIntArray[1]))
-        { throw new Exception("Couldn't parse an int from the third argument"); }
+        if (!Int32.TryParse(args[args.Length - 2], out returnIntArray[0]))
+        { 
+            throw new Exception("Couldn't parse an int from the second to last argument"); 
+        }
+        else if (returnIntArray[0] < 0) 
+            { throw new FormatException("Lifetime can't be negative"); }
+
+        if (!Int32.TryParse(args[args.Length - 1], out returnIntArray[1]))
+        { 
+            throw new Exception("Couldn't parse an int from the third argument");
+        }
+        else if (returnIntArray[1] < 0)
+            { throw new FormatException("Monitoring Frequency can't be negative"); }
 
         return returnIntArray;
     }
