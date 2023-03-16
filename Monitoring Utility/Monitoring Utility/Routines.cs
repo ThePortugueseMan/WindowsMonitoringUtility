@@ -14,6 +14,7 @@ internal class Routines
         this._maxLifeTime = _maxlifeTime;
     }
 
+
     public void CheckingRoutine()
     {
         Process[] activeProcesses = Process.GetProcessesByName(_processName);
@@ -33,7 +34,7 @@ internal class Routines
         {
             process.Kill();
             logs.WriteLine($"{processBackup.killDate} [{processBackup.processName}, Id: {processBackup.processId}]: " +
-                $"KILLED with {processBackup.lifetime.TotalMinutes.ToString("F2")} minutes");
+                $"KILLED with {Math.Truncate(processBackup.lifetime.TotalMinutes)}:{processBackup.lifetime.Seconds} (mm:ss)");
         }
         catch (Exception e) { }
         

@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "8R/I4pnLfX+PTKougMHtELb7X72xRHjDlPu/TKucE6R5ROzDh/oW/bfOpOChGhGphcZgIw/Uja9QJqV/XbR44Q==",
+  "dgSpecHash": "RdVzT7qZYLlqXx6g4s4KyhCW/ITHgpi8g+pepGxMvAAmSK9hpp71Wolaxw/WIZVp6Da1zeMZAGyNLZF1EpGWFQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\emartins\\Desktop\\Projetos\\WindowsMonitoringUtility\\Monitoring Utility\\Monitoring Utility\\MonitoringUtility.csproj",
+  "projectFilePath": "E:\\Code Academy\\Challenges\\WindowsMonitoringUtility\\Monitoring Utility\\Monitoring Utility\\MonitoringUtility.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\emartins\\.nuget\\packages\\microsoft.codedom.providers.dotnetcompilerplatform\\3.6.0\\microsoft.codedom.providers.dotnetcompilerplatform.3.6.0.nupkg.sha512"
+    "C:\\Users\\cemar\\.nuget\\packages\\microsoft.codedom.providers.dotnetcompilerplatform\\3.6.0\\microsoft.codedom.providers.dotnetcompilerplatform.3.6.0.nupkg.sha512"
   ],
   "logs": [
     {

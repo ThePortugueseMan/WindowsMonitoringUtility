@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\emartins\\Desktop\\Projetos\\WindowsMonitoringUtility\\Monitoring Utility\\Monitoring Utility\\MonitoringUtility.csproj": {}
+    "E:\\Code Academy\\Challenges\\WindowsMonitoringUtility\\Monitoring Utility\\Monitoring Utility\\MonitoringUtility.csproj": {}
   },
   "projects": {
-    "C:\\Users\\emartins\\Desktop\\Projetos\\WindowsMonitoringUtility\\Monitoring Utility\\Monitoring Utility\\MonitoringUtility.csproj": {
+    "E:\\Code Academy\\Challenges\\WindowsMonitoringUtility\\Monitoring Utility\\Monitoring Utility\\MonitoringUtility.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\emartins\\Desktop\\Projetos\\WindowsMonitoringUtility\\Monitoring Utility\\Monitoring Utility\\MonitoringUtility.csproj",
+        "projectUniqueName": "E:\\Code Academy\\Challenges\\WindowsMonitoringUtility\\Monitoring Utility\\Monitoring Utility\\MonitoringUtility.csproj",
         "projectName": "MonitoringUtility",
-        "projectPath": "C:\\Users\\emartins\\Desktop\\Projetos\\WindowsMonitoringUtility\\Monitoring Utility\\Monitoring Utility\\MonitoringUtility.csproj",
-        "packagesPath": "C:\\Users\\emartins\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\emartins\\Desktop\\Projetos\\WindowsMonitoringUtility\\Monitoring Utility\\Monitoring Utility\\obj\\",
+        "projectPath": "E:\\Code Academy\\Challenges\\WindowsMonitoringUtility\\Monitoring Utility\\Monitoring Utility\\MonitoringUtility.csproj",
+        "packagesPath": "C:\\Users\\cemar\\.nuget\\packages\\",
+        "outputPath": "E:\\Code Academy\\Challenges\\WindowsMonitoringUtility\\Monitoring Utility\\Monitoring Utility\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\emartins\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\cemar\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -61,7 +61,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.104\\RuntimeIdentifierGraph.json"
         }
       }
     }

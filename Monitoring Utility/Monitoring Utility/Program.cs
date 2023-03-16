@@ -8,20 +8,22 @@ internal class Program
     {
         string processName;
         int monitoringFrequency, maxLifeTime;
-        if (args.Length == 3) 
+        ParseArgs parseArgs = new();
+
+        parseArgs.ValidateArgs(args);
+        processName = parseArgs.GetProcessNameFromArgs(args);
+        if (false)
         {
             processName = args[0];
-            if (!Int32.TryParse(args[1], out maxLifeTime))
-            { throw new Exception("Couldn't parse an int from the second argument"); }
-            if (!Int32.TryParse(args[2], out monitoringFrequency))
-            { throw new Exception("Couldn't parse an int from the third argument"); } 
+
         }
-        else 
+        else
         {
             processName = "notepad";
             monitoringFrequency = 1;
             maxLifeTime = 1;
         }
+        
 
         var monitoringTask = new BackgroundMonitoring(monitoringFrequency, processName, maxLifeTime);
         monitoringTask.Start();
@@ -29,6 +31,10 @@ internal class Program
         ConsoleKeyInfo input;
         do
         {
+            while(!Console.KeyAvailable)
+            {
+
+            }
             input = Console.ReadKey();
         }
         while (input.Key != ConsoleKey.Q);
@@ -36,5 +42,7 @@ internal class Program
         Console.Clear();
         monitoringTask.StopAsync();
     }
+
+
 }
 
